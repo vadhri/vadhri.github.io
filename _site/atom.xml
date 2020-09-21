@@ -4,7 +4,7 @@
  <title>Notes</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-09-21T21:15:07+05:30</updated>
+ <updated>2020-09-21T21:28:54+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Vadhri</name>
@@ -17,13 +17,11 @@
    <link href="http://localhost:4000/2020/09/20/rust-notebook/"/>
    <updated>2020-09-20T00:00:00+05:30</updated>
    <id>http://localhost:4000/2020/09/20/rust-notebook</id>
-   <content type="html">&lt;h1 id=&quot;rust-notebook&quot;&gt;Rust notebook&lt;/h1&gt;
-
-&lt;p&gt;Hi - In the notebook, are some loosely coupled projects that i made during the course of me learning rust. I will continue to update anything worth archiving that can help a larger audience.
+   <content type="html">&lt;p&gt;Hi - In the notebook &lt;a href=&quot;https://github.com/vadhri/rust-notebook&quot;&gt;rust-notebook&lt;/a&gt;, are some loosely coupled projects realted to rust programming langauge, that i made during the course of me learning rust. I will continue to update anything worth archiving that can help a larger audience.
 List of items are categorized roughly as below.&lt;/p&gt;
 
 &lt;h2 id=&quot;general&quot;&gt;General&lt;/h2&gt;
-&lt;p&gt;Rust langauge samples for various concepts.&lt;/p&gt;
+&lt;p&gt;Rust language samples for various concepts.&lt;/p&gt;
 
 &lt;h2 id=&quot;command-line-utilities&quot;&gt;Command line utilities&lt;/h2&gt;
 
