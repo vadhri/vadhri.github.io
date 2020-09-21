@@ -3,13 +3,11 @@ layout: post
 title: Rust samples collection
 ---
 
-# Rust notebook
-
-Hi - In the notebook, are some loosely coupled projects that i made during the course of me learning rust. I will continue to update anything worth archiving that can help a larger audience.
+Hi - In the notebook [rust-notebook](https://github.com/vadhri/rust-notebook), are some loosely coupled projects realted to rust programming langauge, that i made during the course of me learning rust. I will continue to update anything worth archiving that can help a larger audience.
 List of items are categorized roughly as below.
 
 ## General
-Rust langauge samples for various concepts.
+Rust language samples for various concepts.
 
 ## Command line utilities
 
