@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-21T11:10:36+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">technotes</title><subtitle>This blog is an assorted list of technology items that i thought are useful to share.</subtitle><entry><title type="html">Rust samples repository</title><link href="http://localhost:4000/rust/2020/09/20/rust-notebook.html" rel="alternate" type="text/html" title="Rust samples repository" /><published>2020-09-20T10:34:38+05:30</published><updated>2020-09-20T10:34:38+05:30</updated><id>http://localhost:4000/rust/2020/09/20/rust-notebook</id><content type="html" xml:base="http://localhost:4000/rust/2020/09/20/rust-notebook.html">&lt;h1 id=&quot;rust-notebook&quot;&gt;Rust notebook&lt;/h1&gt;
+
+&lt;p&gt;Hi - In the notebook at &lt;a href=&quot;https://github.com/vadhri/rust-notebook/&quot;&gt;rust-notebook&lt;/a&gt;, are some loosely coupled projects that i made during the course of me learning rust. I will continue to update anything worth archiving that can help a larger audience.
+List of items are categorized roughly as below.&lt;/p&gt;
+
+&lt;h2 id=&quot;general&quot;&gt;General&lt;/h2&gt;
+&lt;p&gt;Rust langauge samples for various concepts.&lt;/p&gt;
+
+&lt;h2 id=&quot;command-line-utilities&quot;&gt;Command line utilities&lt;/h2&gt;
+
+&lt;p&gt;Rust is popular in its own way for writing utilities for command line. The clap library provides a neat way to extract arguments from any command line run programmes / services / adapters etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;async-and-network&quot;&gt;Async and network&lt;/h2&gt;
+&lt;p&gt;In rust, async &amp;amp; await would need a lot of practise and in the folder you would see some examples of using …&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Some simple usage of Async await - futures&lt;/li&gt;
+  &lt;li&gt;Simple examples of Tokio run time, spawn&lt;/li&gt;
+  &lt;li&gt;TcpStream ( converting tcpstreams { sockets } as Streams ) &amp;amp; socket based client server exchange of a file&lt;/li&gt;
+  &lt;li&gt;TcpUtils ( codecs ) based simple chat / echo server&lt;/li&gt;
+  &lt;li&gt;Converting u8 vectors into streams.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;concurrency--parallelism&quot;&gt;Concurrency &amp;amp; parallelism&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Threading support and simple usage of cross beam channels&lt;/li&gt;
+  &lt;li&gt;Ray-on usage with image decoding &amp;amp; resize along with actix-web.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;database&quot;&gt;Database&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;A sample program that demonstrates CRUD with Postgresql using diesel.rs ORM adapter, migration of schema using diesel-cli. Sakila sample db is used as sample. I move some int2’s around as int4s in the db schematic.&lt;/li&gt;
+  &lt;li&gt;[Someday] Noria, Neo4J and influxDB usage.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;microservices&quot;&gt;Microservices&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;actix-web-mongodb is expected to demonstrate the usage of ..
+    &lt;ul&gt;
+      &lt;li&gt;Mongo driver of rust (CRUD operations of a record. R2d2 polling is avoided since the connection polling is part of the mongodb rust driver.)&lt;/li&gt;
+      &lt;li&gt;Actix web framework - CRUD APIs with db ( along with postman json )&lt;/li&gt;
+      &lt;li&gt;Static serving of files.&lt;/li&gt;
+      &lt;li&gt;Create user with actos for db create user request.&lt;/li&gt;
+      &lt;li&gt;Client CRUD API testing app based on react-admin&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;warp-web-sockets-redis is expected to demonstrate the usage of ..
+    &lt;ul&gt;
+      &lt;li&gt;websockets based on tokio-tungstenite ( comes with warp )&lt;/li&gt;
+      &lt;li&gt;Cors filtering&lt;/li&gt;
+      &lt;li&gt;Redis interfaces with multiplexed connections.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;gRPC tonic implementation for totp verification
+    &lt;ul&gt;
+      &lt;li&gt;tonic based grpc server generation&lt;/li&gt;
+      &lt;li&gt;totp verification based on google authorization package&lt;/li&gt;
+      &lt;li&gt;APIs for register and verify totp&lt;/li&gt;
+      &lt;li&gt;A sample web app to demonstrate usage based on grpc-web&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.envoyproxy.io/&quot;&gt;Envoy Proxy&lt;/a&gt; configuration for interfacing between server and client.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Apache arrow rust library - Simple SQL command.
+    &lt;ul&gt;
+      &lt;li&gt;Simple data loading from SQL command using arrow library.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;MMAP json file
+    &lt;ul&gt;
+      &lt;li&gt;Memory mapped I/O for reading (ideally large files)&lt;/li&gt;
+      &lt;li&gt;Filter json with closure and save the outcome to files.&lt;/li&gt;
+      &lt;li&gt;Count json records with/without filters.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;qa&quot;&gt;QA&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Quickcheck - sample usage for automated unit testing based on function template.&lt;/li&gt;
+  &lt;li&gt;Criterion - Sample usage for collecting benchmarks for sample runs of reading, re-sizing and saving two image variants.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;iot&quot;&gt;Iot&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;MQTT client with paho.mqtt.rust lib with example of thingspeak&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wasm&quot;&gt;Wasm&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;A simple word counter that has the real counting part in wasm generated by rust.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://word-counter-seven.vercel.app/&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;wasm generation from rust.&lt;/li&gt;
+      &lt;li&gt;Include wasm into the reactjs application&lt;/li&gt;
+      &lt;li&gt;mdbreact to build the simple ui interface.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;serverless&quot;&gt;serverless&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A simple code to use aws lambda run time environment to do base64 encoding of a string&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="rust" /><summary type="html">Rust notebook</summary></entry></feed>
